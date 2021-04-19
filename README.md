@@ -89,4 +89,5 @@ To prepare your microSD card, you'll need a computer with internet connection an
 
 `$python onnx_export.py --model-dir=models/’NameOfYourModel’`
 - Perfect, now save the .onnx  and the labels.txt file created in google Drive and download in your Jetson Nano.
+## Running the model in your Jetson Nano
 

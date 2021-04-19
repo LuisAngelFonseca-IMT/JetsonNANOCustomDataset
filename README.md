@@ -43,4 +43,16 @@ To prepare your microSD card, you'll need a computer with internet connection an
 - First, download the app for labeling your images, the app is [VOTT](https://github.com/microsoft/VoTT) a microsoft free and open source for image annotation and labeling
 - Check the github for see the tutorials on how to start labeling your project. Here is a [video tutorial](https://www.youtube.com/watch?v=uXxE4Sas3uQ&t=2s).
 - After you install the app, let's start downloading images in your folder connected to your project in vott. Also you can download videos and take frames for labeling (easiest way to labelling)After you install the app, let's start downloading images in your folder connected to your project in vott. Also you can download videos and take frames for labeling (easiest way to labelling)
--
+![Example Labeling](images/Imagen1.png)
+- Finally, export your project in Vott JSON format
+![Example Export](images/Imagen2.png)
+## Roboflow for Data Augmentation
+- Create your account at [Roboflow](https://roboflow.com/).
+- Next, create a new dataset
+![Example create](images/Imagen3.png)
+- Click on 'add images', select the folder where your dataset has beem exported from Vott
+![Example add](images/Imagen4.png)
+- Then, choose the augmentation options of your preference
+![Example choose](images/Imagen5.png)
+- Finally, click on 'generate'. Congratulations, you have successfully create your dataset
+![Example generate](images/Imagen6.png)

@@ -74,5 +74,6 @@ To prepare your microSD card, you'll need a computer with internet connection an
 ![Example unzip](images/Imagen9.png)
 - Open your anaconda prompt and go to the direction of the python script 'PrepareDataset.py'
 - Enter this command into the console:
-- 
+
+`$python PrepareDataset.py --data=’FolderNameofYourData’ --name=’NameOfTheFolderToAllocateTTheTransformData’`
 

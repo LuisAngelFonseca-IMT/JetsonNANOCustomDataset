@@ -62,3 +62,5 @@ To prepare your microSD card, you'll need a computer with internet connection an
 - Finally, click on 'generate'. Congratulations, you have successfully create your dataset
 
 ![Example generate](images/Imagen6.png)
+## Prepare Dataset for Training the Mobilenet-SSD
+- Before training our neural network, we need to install this file in our own PC, then install the requirements file. When you finish you will see a folder like this.

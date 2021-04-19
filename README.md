@@ -46,14 +46,19 @@ To prepare your microSD card, you'll need a computer with internet connection an
 
 ![Example Labeling](images/Imagen1.png)
 - Finally, export your project in Vott JSON format
+
 ![Example Export](images/Imagen2.png)
 ## Roboflow for Data Augmentation
 - Create your account at [Roboflow](https://roboflow.com/).
 - Next, create a new dataset
+
 ![Example create](images/Imagen3.png)
 - Click on 'add images', select the folder where your dataset has beem exported from Vott
+
 ![Example add](images/Imagen4.png)
 - Then, choose the augmentation options of your preference
+
 ![Example choose](images/Imagen5.png)
 - Finally, click on 'generate'. Congratulations, you have successfully create your dataset
+
 ![Example generate](images/Imagen6.png)

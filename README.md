@@ -63,4 +63,16 @@ To prepare your microSD card, you'll need a computer with internet connection an
 
 ![Example generate](images/Imagen6.png)
 ## Prepare Dataset for Training the Mobilenet-SSD
-- Before training our neural network, we need to install this file in our own PC, then install the requirements file. When you finish you will see a folder like this.
+- Before training our neural network, we need to download this [file](https://drive.google.com/u/0/uc?id=1rKiFl4WwzcbQ4Qbs_y4MbU9IGI3dfzLS&export=download) in our own PC, then install the requirements file. When you finish you will see a folder like this.
+
+![Example folder](images/Imagen7.png)
+- In the data folder you will download the dataset from roboflow, it is important that you download your data in Pascal VOC format.
+
+![Example VOC](images/Imagen8.png)
+- Unzip your data and prepare to train your model, it should look like this
+
+![Example unzip](images/Imagen9.png)
+- Open your anaconda prompt and go to the direction of the python script 'PrepareDataset.py'
+- Enter this command into the console:
+- 
+

@@ -43,6 +43,7 @@ To prepare your microSD card, you'll need a computer with internet connection an
 - First, download the app for labeling your images, the app is [VOTT](https://github.com/microsoft/VoTT) a microsoft free and open source for image annotation and labeling
 - Check the github for see the tutorials on how to start labeling your project. Here is a [video tutorial](https://www.youtube.com/watch?v=uXxE4Sas3uQ&t=2s).
 - After you install the app, let's start downloading images in your folder connected to your project in vott. Also you can download videos and take frames for labeling (easiest way to labelling)After you install the app, let's start downloading images in your folder connected to your project in vott. Also you can download videos and take frames for labeling (easiest way to labelling)
+
 ![Example Labeling](images/Imagen1.png)
 - Finally, export your project in Vott JSON format
 ![Example Export](images/Imagen2.png)

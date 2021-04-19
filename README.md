@@ -39,6 +39,9 @@ To prepare your microSD card, you'll need a computer with internet connection an
 ## Extra Step and Video Tutorial
 - If you want to use the 'Headless Mode' follow thee tutorial on the [Nvidia website](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup)
 - Here is the [video tutorial](https://www.youtube.com/watch?v=uvU8AXY1170), in the video is an extra step to use all the memory of your jetson, [minute 11:00](https://youtu.be/uvU8AXY1170?t=664).
+## Install all libraries for IA in Jetson Nano
+* A [video tutorial](https://www.youtube.com/watch?v=GA1EtjswpEk) to install all the neccesary tools for IA in Jetons
+* Importan tools when making your own IA application [Here.](https://github.com/dusty-nv/jetson-inference)
 ## Create your Custom Dataset
 - First, download the app for labeling your images, the app is [VOTT](https://github.com/microsoft/VoTT) a microsoft free and open source for image annotation and labeling
 - Check the github for see the tutorials on how to start labeling your project. Here is a [video tutorial](https://www.youtube.com/watch?v=uXxE4Sas3uQ&t=2s).

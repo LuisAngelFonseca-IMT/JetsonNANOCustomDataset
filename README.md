@@ -76,4 +76,17 @@ To prepare your microSD card, you'll need a computer with internet connection an
 - Enter this command into the console:
 
 `$python PrepareDataset.py --data=’FolderNameofYourData’ --name=’NameOfTheFolderToAllocateTTheTransformData’`
+- Then find a file with the name ‘labels.txt’ in the new folder created by the python script, put the names in list of your labels and save it. 
+
+![Example labels](images/Imagen10.png)
+-Perfect, our data is ready for training. Now open a new anaconda prompt and go to the pytorch-ssd folder and enter this command into the console:
+
+`$python train_ssd.py --dataset-type=voc --data=data/’PathYourDataset” --model-dir=models/’NameOfYourModel’ --batch-size=8 --workers=0 --epochs=1`
+- Troubleshooting
+  - Reduce the number of the batch size to 2 
+  - To get better results increment the number epochs
+- Finally, let's transform our model to ONNX format, this will optimize our model. In the same console we train the model, we will put this command:
+
+`$python onnx_export.py --model-dir=models/’NameOfYourModel’`
+- Perfect, now save the .onnx  and the labels.txt file created in google Drive and download in your Jetson Nano.
 

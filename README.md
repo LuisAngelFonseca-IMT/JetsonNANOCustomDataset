@@ -78,19 +78,28 @@ To prepare your microSD card, you'll need a computer with internet connection an
 - Open your anaconda prompt and go to the direction of the python script 'PrepareDataset.py'
 - Enter this command into the console:
 
-`$python PrepareDataset.py --data=’FolderNameofYourData’ --name=’NameOfTheFolderToAllocateTTheTransformData’`
+`$ python PrepareDataset.py --data=’FolderNameofYourData’ --name=’NameOfTheFolderToAllocateTTheTransformData’`
 - Then find a file with the name ‘labels.txt’ in the new folder created by the python script, put the names in list of your labels and save it. 
 
 ![Example labels](images/Imagen10.png)
 -Perfect, our data is ready for training. Now open a new anaconda prompt and go to the pytorch-ssd folder and enter this command into the console:
 
-`$python train_ssd.py --dataset-type=voc --data=data/’PathYourDataset” --model-dir=models/’NameOfYourModel’ --batch-size=8 --workers=0 --epochs=1`
+`$ python train_ssd.py --dataset-type=voc --data=data/’PathYourDataset” --model-dir=models/’NameOfYourModel’ --batch-size=8 --workers=0 --epochs=1`
 - Troubleshooting
   - Reduce the number of the batch size to 2 
   - To get better results increment the number epochs
 - Finally, let's transform our model to ONNX format, this will optimize our model. In the same console we train the model, we will put this command:
 
-`$python onnx_export.py --model-dir=models/’NameOfYourModel’`
+`$ python onnx_export.py --model-dir=models/’NameOfYourModel’`
 - Perfect, now save the .onnx  and the labels.txt file created in google Drive and download in your Jetson Nano.
 ## Running the model in your Jetson Nano
+* Download your model.onnx and the labels.txt to /jetson-inference/python/training/detection/ssd/models/"YourModelName"/
+* Run the docker container in the terminal
+
+`$ cd jetson-inference`
+`$ docker/run.sh`
+* Run your model using the webcam 
+
+`$ detectnet --model=models/"YourModelName"/yourfile.onnx --labels=models/"YourModelName"/labels.txt \
+          --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0` 
 

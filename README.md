@@ -98,6 +98,9 @@ To prepare your microSD card, you'll need a computer with internet connection an
 
 `$ cd jetson-inference`
 `$ docker/run.sh`
+* Then go to the training directory
+
+`$ cd python/training/detection/ssd/`
 * Run your model using the webcam 
 
 `$ detectnet --model=models/"YourModelName"/yourfile.onnx --labels=models/"YourModelName"/labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0`

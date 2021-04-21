@@ -105,6 +105,6 @@ To prepare your microSD card, you'll need a computer with internet connection an
 
 `$ detectnet --model=models/"YourModelName"/yourfile.onnx --labels=models/"YourModelName"/labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0`
 * The first time you run your model it will take a while
-* Finally, you can see the video of my tire detection model [here]()
+* Finally, you can see the video of my tire detection model [here](https://youtu.be/15D2Q3Fgwbs)
 ## Important links 
 [Nvidia GITHUB](https://github.com/dusty-nv/jetson-inference)
